@@ -1,0 +1,553 @@
+[
+  {
+    "id": 1,
+    "question": "What does HTML stand for?",
+    "options": [
+      "Hyper Trainer Marking Language",
+      "Hyper Text Markup Language",
+      "Hyper Text Marketing Language",
+      "Hyper Tool Markup Language"
+    ],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "id": 2,
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "options": [
+      "<a>",
+      "<link>",
+      "<href>",
+      "<url>"
+    ],
+    "answer": "<a>"
+  },
+  {
+    "id": 3,
+    "question": "Which HTML tag is used to display an image?",
+    "options": [
+      "<img>",
+      "<image>",
+      "<pic>",
+      "<picture>"
+    ],
+    "answer": "<img>"
+  },
+  {
+    "id": 4,
+    "question": "Which tag defines the largest heading?",
+    "options": [
+      "<h1>",
+      "<h6>",
+      "<h3>",
+      "<head>"
+    ],
+    "answer": "<h1>"
+  },
+  {
+    "id": 5,
+    "question": "Which HTML tag is used to create a table?",
+    "options": [
+      "<table>",
+      "<tab>",
+      "<tbl>",
+      "<t>"
+    ],
+    "answer": "<table>"
+  },
+  {
+    "id": 6,
+    "question": "Which HTML element contains meta information?",
+    "options": [
+      "<head>",
+      "<meta>",
+      "<info>",
+      "<header>"
+    ],
+    "answer": "<head>"
+  },
+  {
+    "id": 7,
+    "question": "Which attribute opens a link in a new tab?",
+    "options": [
+      "target='_blank'",
+      "href='_blank'",
+      "link='_new'",
+      "tab='_new'"
+    ],
+    "answer": "target='_blank'"
+  },
+  {
+    "id": 8,
+    "question": "Which HTML tag creates an ordered list?",
+    "options": [
+      "<ol>",
+      "<ul>",
+      "<list>",
+      "<order>"
+    ],
+    "answer": "<ol>"
+  },
+  {
+    "id": 9,
+    "question": "Which tag is used to create a form?",
+    "options": [
+      "<form>",
+      "<input>",
+      "<formtag>",
+      "<submit>"
+    ],
+    "answer": "<form>"
+  },
+  {
+    "id": 10,
+    "question": "Which tag is used for dropdown selection?",
+    "options": [
+      "<select>",
+      "<dropdown>",
+      "<option>",
+      "<choice>"
+    ],
+    "answer": "<select>"
+  },
+  {
+    "id": 11,
+    "question": "Which attribute is used for image alternate text?",
+    "options": [
+      "title",
+      "alt",
+      "desc",
+      "name"
+    ],
+    "answer": "alt"
+  },
+  {
+    "id": 12,
+    "question": "Which protocol is secure?",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "FTP",
+      "TCP"
+    ],
+    "answer": "HTTPS"
+  },
+  {
+    "id": 13,
+    "question": "Which HTML tag is used to add a line break?",
+    "options": [
+      "<br>",
+      "<lb>",
+      "<break>",
+      "<line>"
+    ],
+    "answer": "<br>"
+  },
+  {
+    "id": 14,
+    "question": "Which HTML tag creates a text input field?",
+    "options": [
+      "<input>",
+      "<textbox>",
+      "<field>",
+      "<text>"
+    ],
+    "answer": "<input>"
+  },
+  {
+    "id": 15,
+    "question": "What is the correct extension for HTML file?",
+    "options": [
+      ".htm",
+      ".html",
+      ".web",
+      ".site"
+    ],
+    "answer": ".html"
+  },
+  {
+    "id": 16,
+    "question": "CSS stands for?",
+    "options": [
+      "Creative Style System",
+      "Cascading Style Sheets",
+      "Colorful Style Sheets",
+      "Computer Style System"
+    ],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "id": 17,
+    "question": "Which CSS property changes text color?",
+    "options": [
+      "font-color",
+      "text-style",
+      "color",
+      "text-color"
+    ],
+    "answer": "color"
+  },
+  {
+    "id": 18,
+    "question": "Which property sets background color?",
+    "options": [
+      "backgroundColor",
+      "bg-color",
+      "color-bg",
+      "background-color"
+    ],
+    "answer": "background-color"
+  },
+  {
+    "id": 19,
+    "question": "Which property controls text size?",
+    "options": [
+      "font-size",
+      "text-size",
+      "font-style",
+      "size"
+    ],
+    "answer": "font-size"
+  },
+  {
+    "id": 20,
+    "question": "Which CSS property makes text bold?",
+    "options": [
+      "font-bold",
+      "bold",
+      "font-weight",
+      "text-weight"
+    ],
+    "answer": "font-weight"
+  },
+  {
+    "id": 21,
+    "question": "Which property centers text?",
+    "options": [
+      "align",
+      "center",
+      "text-align",
+      "justify"
+    ],
+    "answer": "text-align"
+  },
+  {
+    "id": 22,
+    "question": "Which property adds internal spacing?",
+    "options": [
+      "margin",
+      "padding",
+      "space",
+      "gap"
+    ],
+    "answer": "padding"
+  },
+  {
+    "id": 23,
+    "question": "Which CSS property adds external spacing?",
+    "options": [
+      "padding",
+      "margin",
+      "gap",
+      "spacing"
+    ],
+    "answer": "margin"
+  },
+  {
+    "id": 24,
+    "question": "Which property hides an element?",
+    "options": [
+      "display:none",
+      "invisible:true",
+      "opacity:0",
+      "hide:true"
+    ],
+    "answer": "display:none"
+  },
+  {
+    "id": 25,
+    "question": "Which layout method uses flexible boxes?",
+    "options": [
+      "display:flex",
+      "flexbox:true",
+      "layout:flex",
+      "display:grid"
+    ],
+    "answer": "display:flex"
+  },
+  {
+    "id": 26,
+    "question": "Which property changes font style?",
+    "options": [
+      "font-style",
+      "font-weight",
+      "font-size",
+      "font-align"
+    ],
+    "answer": "font-style"
+  },
+  {
+    "id": 27,
+    "question": "Which property sets width?",
+    "options": [
+      "width",
+      "size",
+      "w-size",
+      "resize"
+    ],
+    "answer": "width"
+  },
+  {
+    "id": 28,
+    "question": "Which property sets height?",
+    "options": [
+      "height",
+      "h-size",
+      "dimension",
+      "size"
+    ],
+    "answer": "height"
+  },
+  {
+    "id": 29,
+    "question": "Which property controls spacing between lines?",
+    "options": [
+      "line-height",
+      "spacing",
+      "gap",
+      "text-space"
+    ],
+    "answer": "line-height"
+  },
+  {
+    "id": 30,
+    "question": "Which unit is relative to root font size?",
+    "options": [
+      "px",
+      "em",
+      "rem",
+      "%"
+    ],
+    "answer": "rem"
+  },
+  {
+    "id": 31,
+    "question": "Which unit represents percentage?",
+    "options": [
+      "rem",
+      "em",
+      "%",
+      "px"
+    ],
+    "answer": "%"
+  },
+  {
+    "id": 32,
+    "question": "JavaScript is ___?",
+    "options": [
+      "Programming Language",
+      "Framework",
+      "Library",
+      "Markup language"
+    ],
+    "answer": "Programming Language"
+  },
+  {
+    "id": 33,
+    "question": "Which symbol is used for single-line comments?",
+    "options": [
+      "//",
+      "/* */",
+      "#",
+      "--"
+    ],
+    "answer": "//"
+  },
+  {
+    "id": 34,
+    "question": "Which method is used to print output?",
+    "options": [
+      "console.print()",
+      "print()",
+      "console.log()",
+      "message()"
+    ],
+    "answer": "console.log()"
+  },
+  {
+    "id": 35,
+    "question": "Which function runs after a delay?",
+    "options": [
+      "setInterval",
+      "setTimeout",
+      "wait()",
+      "delayRun"
+    ],
+    "answer": "setTimeout"
+  },
+  {
+    "id": 36,
+    "question": "Which keyword declares a variable?",
+    "options": [
+      "variable",
+      "dim",
+      "let",
+      "define"
+    ],
+    "answer": "let"
+  },
+  {
+    "id": 37,
+    "question": "Which keyword creates a constant?",
+    "options": [
+      "var",
+      "const",
+      "constant",
+      "fixed"
+    ],
+    "answer": "const"
+  },
+  {
+    "id": 38,
+    "question": "Which method converts a string to number?",
+    "options": [
+      "toNumber()",
+      "string()",
+      "Number()",
+      "convert()"
+    ],
+    "answer": "Number()"
+  },
+  {
+    "id": 39,
+    "question": "Which method adds item to end of array?",
+    "options": [
+      "push()",
+      "pop()",
+      "unshift()",
+      "shift()"
+    ],
+    "answer": "push()"
+  },
+  {
+    "id": 40,
+    "question": "Which method removes last element?",
+    "options": [
+      "remove()",
+      "pop()",
+      "splice()",
+      "shift()"
+    ],
+    "answer": "pop()"
+  },
+  {
+    "id": 41,
+    "question": "Which operator checks equality with type?",
+    "options": [
+      "==",
+      "===",
+      "!=",
+      "="
+    ],
+    "answer": "==="
+  },
+  {
+    "id": 42,
+    "question": "Which operator assigns value?",
+    "options": [
+      "+",
+      "-",
+      "*",
+      "="
+    ],
+    "answer": "="
+  },
+  {
+    "id": 43,
+    "question": "Which keyword stops a loop?",
+    "options": [
+      "stop",
+      "break",
+      "exit",
+      "halt"
+    ],
+    "answer": "break"
+  },
+  {
+    "id": 44,
+    "question": "Which array method joins elements?",
+    "options": [
+      "add()",
+      "concat()",
+      "join()",
+      "append()"
+    ],
+    "answer": "join()"
+  },
+  {
+    "id": 45,
+    "question": "Which type of storage has expiry?",
+    "options": [
+      "localStorage",
+      "sessionStorage",
+      "database",
+      "RAM"
+    ],
+    "answer": "sessionStorage"
+  },
+  {
+    "id": 46,
+    "question": "Which event fires on button click?",
+    "options": [
+      "hover",
+      "onClick",
+      "press",
+      "mouseDown"
+    ],
+    "answer": "onClick"
+  },
+  {
+    "id": 47,
+    "question": "Which method converts JSON string to object?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.parse()",
+      "JSON.object()",
+      "JSON.convert()"
+    ],
+    "answer": "JSON.parse()"
+  },
+  {
+    "id": 48,
+    "question": "DOM stands for?",
+    "options": [
+      "Document Object Model",
+      "Digital Ordinance Machine",
+      "Display Object Model",
+      "Document Order Model"
+    ],
+    "answer": "Document Object Model"
+  },
+  {
+    "id": 49,
+    "question": "Which method fetches API data?",
+    "options": [
+      "fetch()",
+      "get()",
+      "request()",
+      "api()"
+    ],
+    "answer": "fetch()"
+  },
+  {
+  "id": 50,
+  "question": "Which method is used to handle the success of a Promise?",
+  "options": [
+    "catch()",
+    "then()",
+    "finally()",
+    "resolve()"
+  ],
+  "answer": "then()"
+}
+
+]
