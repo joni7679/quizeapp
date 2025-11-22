@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import 
 import questions from '../questions.json'
 
-const Question = ({ handleSubmit, setScore, startExam, handleStartExam }) => {
+const Question = ({ handleSubmit, setScore, startExam, handleStartExam, setAnswers }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState(false);
 
@@ -11,6 +11,18 @@ const Question = ({ handleSubmit, setScore, startExam, handleStartExam }) => {
       if (option === questions[currentIndex].answer) {
         setScore(prev => prev + 1);
       }
+      const correctAnswer = questions[currentIndex].answer;
+      console.log("correct ans", correctAnswer);
+      setAnswers(prev => [
+        ...prev,
+        {
+          id: questions[currentIndex].id,
+          questions: questions[currentIndex].question,
+          option: questions[currentIndex].options,
+          rightAnswer: questions[currentIndex].answer,
+          myAnswer: option === correctAnswer ? "correct" : "Wrong",
+        }
+      ])
       setSelected(true);
     }
     if (currentIndex < questions.length - 1) {
@@ -62,7 +74,6 @@ const Question = ({ handleSubmit, setScore, startExam, handleStartExam }) => {
             }
           </div>
         </div>
-
         <div className="flex items-center justify-center gap-2.5 flex-wrap max-w-md w-full bg-green-500 p-5 rounded-2xl  mt-5 ">
           {
             questions.map((que, i) => {
@@ -74,7 +85,6 @@ const Question = ({ handleSubmit, setScore, startExam, handleStartExam }) => {
         </div>
       </div>
       }
-
     </>
   );
 };
