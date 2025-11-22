@@ -7,29 +7,35 @@ const App = () => {
   const [score, setScore] = useState(0)
   const [timer, setTimer] = useState(300)
   const [displayTime, setDisplayTime] = useState('')
-
+  const [startExam, setStartExam] = useState(false)
+  const handleStartExam = () => {
+    setStartExam(true)
+  }
 
   // handlesubmit
   const handleSubmit = () => {
     setSubmit(true)
+    setStartExam(false);
     alert("Result submit successfully")
   }
   // left time logic
   useEffect(() => {
-    let intervalId = setInterval(() => {
-      setTimer(prev => {
-        if (prev <= 0) {
-          clearInterval(intervalId);
-          return 0;
-        }
-        return prev - 1;
-      })
-    }, 1000);
-
+    let intervalId;
+    if (startExam) {
+      intervalId = setInterval(() => {
+        setTimer(prev => {
+          if (prev <= 0) {
+            clearInterval(intervalId);
+            return 0;
+          }
+          return prev - 1;
+        })
+      }, 1000);
+    }
     return () => {
       clearInterval(intervalId)
     }
-  }, [])
+  }, [startExam])
 
   // time format logic
   useEffect(() => {
@@ -49,8 +55,8 @@ const App = () => {
         </div>
       ) : (
         <div className="flex items-center justify-center w-full h-screen flex-col bg-red-5000">
-          <Timer timer={displayTime} submit={submit} handleSubmit={handleSubmit} score={score} />
-          <Question score={score} setScore={setScore} submit={submit} handleSubmit={handleSubmit} />
+          <Timer startExam={startExam} timer={displayTime} submit={submit} handleSubmit={handleSubmit} score={score} />
+          <Question startExam={startExam} handleStartExam={handleStartExam} score={score} setScore={setScore} submit={submit} handleSubmit={handleSubmit} />
         </div>
       )}
     </>

@@ -1,10 +1,14 @@
-import React  from 'react'
+import React from 'react'
 
-const Timer = ({timer}) => {
-   
+const Timer = ({ timer, startExam }) => {
+
     return (
         <>
-            <span className='font-semibold capitalize'>timer left  : {timer}s </span>
+
+            {
+                startExam && <span className='font-semibold capitalize'>timer left  : {timer}s </span>
+            }
+
         </>
     )
 }

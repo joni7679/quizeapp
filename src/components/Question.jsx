@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import 
 import questions from '../questions.json'
 
-const Question = ({ handleSubmit, setScore }) => {
+const Question = ({ handleSubmit, setScore, startExam, handleStartExam }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState(false);
 
@@ -28,7 +28,8 @@ const Question = ({ handleSubmit, setScore }) => {
 
   return (
     <>
-      <div className="flex items-start  gap-5">
+      {!
+        startExam ? <button onClick={handleStartExam}>Start Exam</button> : <div className="flex items-start  gap-5">
         <div>
           <h2 className='mt-8 mb-4'>{questions[currentIndex].id}, {questions[currentIndex].question}</h2>
           <div className='flex flex-col gap-3 '>
@@ -72,6 +73,8 @@ const Question = ({ handleSubmit, setScore }) => {
           }
         </div>
       </div>
+      }
+
     </>
   );
 };
