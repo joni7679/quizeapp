@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import Timer from './components/Timer'
 import Question from './components/Question'
+import QuestionSheet from './components/QuestionSheet';
+import Result from './components/Result';
 
 const App = () => {
   const [submit, setSubmit] = useState(false);
@@ -13,7 +15,7 @@ const App = () => {
   const handleStartExam = () => {
     setStartExam(true)
   }
-  console.log("answers",answers);
+  console.log("answers", answers);
   // handlesubmit
   const handleSubmit = () => {
     setSubmit(true)
@@ -54,26 +56,7 @@ const App = () => {
         <div className=" p-8">
           <h1 className="text-4xl font-bold mb-4">Your Score: {score}</h1>
           <p className="text-xl text-gray-600">Thank you for completing the test!</p>
-
-
-          {answers.map((val, index) => {
-            return (
-              <>
-                <div key={index}>
-                  <h3>{val.id}</h3>
-                  <h3>{val.questions}</h3>
-                  {val.option.map((o,i)=>{
-                    return(
-                      <p key={i}>{o}</p>
-                    )
-                  })}
-                  <p>Your Answer: {val.myAnswer}</p>
-                  <p>Correct Answer: {val.rightAnswer}</p>
-                  <p>{val.myAnswer === "correct" ? " Correct" : " Wrong"}</p>
-                </div>
-              </>
-            )
-          })}
+          <Result answers={answers}  score={score}/>
         </div>
       ) : (
         <div className="flex items-center justify-center w-full h-screen flex-col bg-red-5000">
@@ -87,6 +70,7 @@ const App = () => {
             handleSubmit={handleSubmit}
             setAnswers={setAnswers}
           />
+
         </div>
       )}
     </>

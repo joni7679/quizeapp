@@ -5,14 +5,19 @@ import questions from '../questions.json'
 const Question = ({ handleSubmit, setScore, startExam, handleStartExam, setAnswers }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selected, setSelected] = useState(false);
-
+  const [wrognCount, setWrongCount] = useState(0)
+  const [rightAnsCount, setRightAnsCount] = useState(0)
   const handleClick = (option) => {
     if (!selected) {
       if (option === questions[currentIndex].answer) {
         setScore(prev => prev + 1);
+        setRightAnsCount(prev => prev + 1)
       }
+      else {
+        setWrongCount(prev => prev + 1)
+      }
+
       const correctAnswer = questions[currentIndex].answer;
-      console.log("correct ans", correctAnswer);
       setAnswers(prev => [
         ...prev,
         {
@@ -20,9 +25,13 @@ const Question = ({ handleSubmit, setScore, startExam, handleStartExam, setAnswe
           questions: questions[currentIndex].question,
           option: questions[currentIndex].options,
           rightAnswer: questions[currentIndex].answer,
-          myAnswer: option === correctAnswer ? "correct" : "Wrong",
+          myAnswer: option,
+          result: option === correctAnswer ? "correct" : "Wrong",
+          totalRightAns: rightAnsCount,
+          totalWrongAns: wrognCount,
         }
       ])
+
       setSelected(true);
     }
     if (currentIndex < questions.length - 1) {
