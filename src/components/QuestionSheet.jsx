@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     }
 });
 
-// Create Document Component
 const QuestionSheet = ({ answers, score }) => (
     <Document>
         <Page size="A4" style={styles.page}>
@@ -90,7 +89,6 @@ const QuestionSheet = ({ answers, score }) => (
                             </Text>
                         );
                     })}
-
                     <Text style={styles.answerLine}>Correct Answer: {val.rightAnswer}</Text>
                 </View>
             ))}
